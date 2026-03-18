@@ -30,6 +30,15 @@ Initialized ShadCN UI and built the main dashboard layout.
 - Mock data with 6 slides across 6 chapters with goals and code snippets
 - TypeScript types for Slide, Chapter, and Snippet
 
+### 2026-03-18 — Dashboard UI Update
+
+Rebranded accent color from indigo to red and applied Raycast-style UI polish.
+
+- Primary color changed to `rgb(245, 51, 63)` across all UI elements
+- "Markdown" in the hero title is now red; "Coding" stays white
+- All red-background containers (badges, number circles, active TOC card) now use white text
+- Active TOC slide card uses solid red background
+
 ### 2026-03-18 — Dashboard UI Phase 2
 
 Added interactivity, animations, and mobile support to the slide layout.
