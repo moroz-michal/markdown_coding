@@ -1,26 +1,31 @@
-# Current Feature: Dashboard UI Phase 1
+# Current Feature
+
+<!-- Current feature here -->
 
 ## Status
 
-In Progress
+<!-- Current status here -->
 
 ## Goals
 
-- Initialize ShadCN UI and install required components
-- Set up main dashboard layout with global styles
-- Configure dark mode as default
-- Add top bar with progress bar showing current step
-- Add placeholder dummy data to step fields
+<!-- Add goals here -->
 
 ## Notes
 
-- Reference screenshot: `context/screenshots/dashboard.png`
-- Phase 1 of 2 — phase 2 spec is at `context/features/dashboard-2-spec.md`
-- Mock data lives in `src/lib/mock-data.ts`
-- Stack: Next.js 16, React 19, Tailwind CSS v4, TypeScript, ShadCN UI
-- Dark mode first (background `#0a0a0a`, sidebar `#111111`, accent `#6366f1`)
-- No `tailwind.config.ts` — Tailwind v4 uses CSS-based config in `globals.css`
+<!-- Add notes here -->
 
 ## History
 
 <!-- Keep this updated. Earliest to latest. -->
+
+### 2026-03-18 — Dashboard UI Phase 1
+
+Initialized ShadCN UI and built the main dashboard layout.
+
+- ShadCN UI initialized with button, badge, progress, separator components
+- Dark mode set as default with custom palette (#0a0a0a background, #6366f1 indigo accent)
+- Table of contents home page with hero, chapter sections, and slide cards
+- Slide page with sidebar: step counter, chapter badge, goals list, prev/next navigation
+- Top progress bar on sidebar showing current step position
+- Mock data with 6 slides across 6 chapters with goals and code snippets
+- TypeScript types for Slide, Chapter, and Snippet
