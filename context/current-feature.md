@@ -1,29 +1,14 @@
-# Current Feature: Slides Mock Data
+# Current Feature
 
 ## Status
 
-In Progress
-
 ## Goals
 
-- Replace dummy data in `src/lib/mock-data.ts` with real presentation slides (10 slides, one per workflow step)
-- Each slide covers one step: Next.js install, cleanup, CLAUDE.md, context files, GitHub push, v0 design, screenshots, feature skill, feature workflow, history as changelog
-- Each slide has a title, description, goals array, and at least one code/file snippet
-- Split slides into chapters: Setup, Context Files, Design, Feature Workflow
-- Keep existing TypeScript types (`Slide`, `Chapter`, `Snippet`) — no architecture changes
+<!-- Add goals here -->
 
 ## Notes
 
-- Spec: `context/features/slides-mock-data-spec.md`
-- Only `src/lib/mock-data.ts` needs to change
-- Slide titles and content in English
-- Total: 10 slides across 4 chapters
-- Every slide must have at least one snippet (bash, markdown, or typescript)
-- Chapter breakdown:
-  - **Setup** — Steps 1–2 (Next.js install, cleanup)
-  - **Context Files** — Steps 3–4 (CLAUDE.md, context files)
-  - **Design** — Steps 5–7 (GitHub push, v0 design, screenshots)
-  - **Feature Workflow** — Steps 8–10 (feature skill, workflow in action, history as changelog)
+<!-- Add notes here -->
 
 ## History
 
@@ -49,6 +34,16 @@ Rebranded accent color from indigo to red and applied Raycast-style UI polish.
 - "Markdown" in the hero title is now red; "Coding" stays white
 - All red-background containers (badges, number circles, active TOC card) now use white text
 - Active TOC slide card uses solid red background
+
+### 2026-03-18 — Slides Mock Data
+
+Replaced dummy slides with real presentation content covering the full markdown-driven workflow.
+
+- 11 slides across 4 chapters: Setup, Context Files, Design, Feature Workflow
+- Each slide has real content, goals, and at least one code/markdown/bash snippet
+- project-overview.md, ai-interaction.md, and current-feature.md shown as full-file snippets
+- Summary slide with GitHub repo link and quickstart snippet as the final step
+- SlideView: added link rendering so [text](url) in content renders as clickable anchors
 
 ### 2026-03-18 — Dashboard UI Phase 2
 
