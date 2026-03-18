@@ -408,6 +408,10 @@ export function SlideView({
                         .replace(
                           /—/g,
                           '<span class="text-muted-foreground"> — </span>'
+                        )
+                        .replace(
+                          /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,
+                          '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-4 hover:text-primary/80 transition-colors">$1</a>'
                         ),
                     }}
                   />
