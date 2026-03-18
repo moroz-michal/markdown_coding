@@ -134,7 +134,7 @@ export function SlideView({
         {/* Chapter badge */}
         <Badge
           variant="secondary"
-          className="w-fit mb-4 bg-primary/15 text-primary border-0 hover:bg-primary/20"
+          className="w-fit mb-4 bg-primary text-primary-foreground border-0 hover:bg-primary/90"
         >
           {slide.chapter}
         </Badge>
@@ -349,7 +349,7 @@ export function SlideView({
                     <ol key={i} className="space-y-3 list-none">
                       {items.map((item, j) => (
                         <li key={j} className="flex items-start gap-3">
-                          <span className="shrink-0 w-5 h-5 rounded-full bg-primary/20 text-primary text-xs font-semibold flex items-center justify-center mt-0.5">
+                          <span className="shrink-0 w-5 h-5 rounded-full bg-primary text-primary-foreground text-xs font-semibold flex items-center justify-center mt-0.5">
                             {j + 1}
                           </span>
                           <span
