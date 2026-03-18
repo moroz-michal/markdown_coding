@@ -22,7 +22,28 @@ Most developers don't know how to work effectively with AI when building applica
 - **No clear changelog** — Hard to track what was done at each step
 
 This presentation introduces **Markdown Coding** — a methodology where you use structured markdown files to guide AI through your development process.`,
-    snippets: [],
+    snippets: [
+      {
+        lang: "markdown",
+        label: "context/current-feature.md",
+        code: `# Current Feature: Add User Authentication
+
+## Status
+In Progress
+
+## Goals
+- User can sign up with email and password
+- User can log in and receive a session token
+- Protected routes redirect to login if unauthenticated
+
+## Notes
+- Use NextAuth.js for session management
+- Hash passwords with bcrypt before storing
+
+## History
+<!-- Completed features will appear here -->`,
+      },
+    ],
   },
   {
     slug: "project-setup",
@@ -214,7 +235,29 @@ The markdown-driven development workflow gives you:
 ## Start Small
 
 You don't need to adopt everything at once. Start with a single CLAUDE.md and one feature file. The workflow will grow naturally from there.`,
-    snippets: [],
+    snippets: [
+      {
+        lang: "markdown",
+        label: "CLAUDE.md",
+        code: `# Project: My App
+
+## Tech Stack
+- Next.js 16 with App Router
+- TypeScript strict mode
+- Tailwind CSS v4 + shadcn/ui
+
+## AI Interaction Rules
+- Read context/current-feature.md before starting work
+- Create a new branch for every feature or fix
+- Ask before committing — never auto-commit
+- Use conventional commit messages (feat:, fix:, chore:)
+
+## Context Files
+- context/current-feature.md — active feature spec
+- context/project-overview.md — full project description
+- context/coding-standards.md — conventions to follow`,
+      },
+    ],
   },
 ];
 

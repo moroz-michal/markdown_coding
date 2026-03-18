@@ -11,6 +11,8 @@ This is phase 2 of 2 for the dashboard UI layout. Use the screenshot referenced 
 - Possibility to open/close sidebar clicking table of contents button
 - Drawer icon to open/close sidebar
 - Always a drawer on mobile view
+- Smooth animations for step progressbar
+- Smooth animation for drawer
 - Add example markdowns
 
 ## References
