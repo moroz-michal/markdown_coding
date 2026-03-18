@@ -29,3 +29,14 @@ Initialized ShadCN UI and built the main dashboard layout.
 - Top progress bar on sidebar showing current step position
 - Mock data with 6 slides across 6 chapters with goals and code snippets
 - TypeScript types for Slide, Chapter, and Snippet
+
+### 2026-03-18 — Dashboard UI Phase 2
+
+Added interactivity, animations, and mobile support to the slide layout.
+
+- Collapsible sidebar with slide+fade animation (desktop panel, mobile Sheet drawer)
+- Keyboard navigation: ← / → to change slides, Esc returns to table of contents
+- Slide content fade+translate animation using Framer Motion (`motion`)
+- Progress bar now animates from the previous step's value instead of always from 0
+- Prev/Next navigation routed through `navigate()` for consistent fade transitions
+- Example markdown snippets added to all slides
